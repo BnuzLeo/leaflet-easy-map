@@ -6,6 +6,7 @@
 	<link rel="stylesheet" href="../libs/leaflet/leaflet.css" />
 	<link rel="stylesheet" href="../libs/bootstrap/css/bootstrap.min.css" />
 	<script src="../libs/leaflet/leaflet.js"></script>
+	<script src="../libs/jquery/jquery-3.4.0.min.js"></script>
 	<script src="../libs/bootstrap/js/bootstrap.min.js"></script>
 </head>
 <body>
@@ -17,10 +18,36 @@
 			<div class="column">
 				<div id="map" class="map-clz"></div>		
 			</div>
+			<div class="column" style="margin-top: 10px">
+				<p><b>UI Layers 功能:</b></p>
+			</div>
+			<div class="column" style="margin-top: 10px">
+				<button type="button" class="btn btn-primary" id="nanfang_maker_button">标记南方软件园</button>
+				<button type="button" class="btn btn-primary" id="nanfang_draggable_button">点击移动标记</button>
+				<button type="button" class="btn btn-primary" id="guantang_maker_button">标记官塘村</button>
+			</div>
+			<div class="column" style="margin-top: 10px">
+				<p><b>Vector 功能:</b></p>
+			</div>
+			<div class="column" style="margin-top: 10px">
+				<button type="button" class="btn btn-primary" id="add_polyline_button">连接两个坐标</button>
+				<button type="button" class="btn btn-primary" id="add_polygon_button">再连接上北理工和赛车场</button>
+				<button type="button" class="btn btn-primary" id="add_circle_button">画出北理工300米范围</button>
+			</div>
+			<div class="column" style="margin-top: 10px">
+				<p><b>标记功能介绍：</b></p>
+				<div class="well">
+					1. 点击地图添加标记
+				</div>
+			</div>
 		</div>
 	</div>
 	<!-- js一定要在dom标签创建之后执行 -->
 	<link rel="stylesheet" href="../css/index.css" />
 	<script src="../js/index.js"></script>
+	<script src="../js/map.js"></script>
+	<script src="../js/raster_layer.js"></script>
+	<script src="../js/ui_layer.js"></script>
+	<script src="../js/vector_layer.js"></script>
 </body>
 </html>
