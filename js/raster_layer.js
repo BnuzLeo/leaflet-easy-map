@@ -7,7 +7,7 @@
 	attribution：右下角的标签
 */
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-	minZoom: 13,
+	minZoom: 0,
 	maxZoom: 18,
     attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
 })

@@ -41,7 +41,8 @@ locateNanfangMaker = function(){
 		nanfang_maker.bindPopup('[Popup]南方软件园').openPopup()
 		/*添加提示框*/
 		nanfang_maker.bindTooltip('[Tooltip]南方软件园').openTooltip();
-	
+		map.setZoom(14);
+		map.flyTo([22.37543,113.56732]);
 	}
 }
 
@@ -69,7 +70,9 @@ locateGuangtangMaker = function(){
 			icon: icon
 		});
 		/*maker添加到地图上*/
-		guantang_maker.addTo(map);	
+		guantang_maker.addTo(map);
+		map.setZoom(14);
+		map.flyTo([22.3756300, 113.5402700]);	
 	}
 }
 
