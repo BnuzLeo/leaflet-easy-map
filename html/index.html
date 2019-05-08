@@ -3,11 +3,17 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Leaflet</title>
+	<!-- leaflet -->
 	<link rel="stylesheet" href="../libs/leaflet/leaflet.css" />
-	<link rel="stylesheet" href="../libs/bootstrap/css/bootstrap.min.css" />
 	<script src="../libs/leaflet/leaflet.js"></script>
+	<!-- jquery -->
 	<script src="../libs/jquery/jquery-3.4.0.min.js"></script>
+	<!-- bootstrap -->
+	<link rel="stylesheet" href="../libs/bootstrap/css/bootstrap.min.css" />
 	<script src="../libs/bootstrap/js/bootstrap.min.js"></script>
+	<!-- select2 -->
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.7/css/select2.min.css" rel="stylesheet" />
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.7/js/select2.min.js"></script>
 </head>
 <body>
 	<div class="container">
@@ -15,15 +21,12 @@
 			<h1>Welcome To Easy Map</h1>
 		</div>
 		<div class="row interval">
-		  <div class="col-lg-6">
-		    <div class="input-group">
-		      <input type="text" class="form-control" placeholder="Search by longitude and latitude">
-		      <span class="input-group-btn">
-		        <button class="btn btn-primary" type="button">Go!</button>
-		      </span>
-		    </div><!-- /input-group -->
-		  </div><!-- /.col-lg-6 -->
-		</div><!-- /.row -->
+			<div class="column">
+				<select class="js-example-basic-single" name="search_input" style="width: 100%">
+				  
+				</select>
+			</div>
+		</div>
 		<div class="row interval">
 			<div class="column">
 				<div id="map" class="map-clz"></div>		
@@ -66,5 +69,6 @@
 	<script src="../js/ui_layer.js"></script>
 	<script src="../js/vector_layer.js"></script>
 	<script src="../js/geojson.js"></script>
+	<script src="../js/baidu_api.js"></script>
 </body>
 </html>
