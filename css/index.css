@@ -1,4 +1,8 @@
 /*地图样式*/
 .map-clz {
-	height: 380px
+	height: 580px
+}
+
+.interval{
+	padding-top: 10px
 }
