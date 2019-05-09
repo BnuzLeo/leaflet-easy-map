@@ -11,9 +11,6 @@
 	<!-- bootstrap -->
 	<link rel="stylesheet" href="../libs/bootstrap/css/bootstrap.min.css" />
 	<script src="../libs/bootstrap/js/bootstrap.min.js"></script>
-	<!-- select2 -->
-	<link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.7/css/select2.min.css" rel="stylesheet" />
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.7/js/select2.min.js"></script>
 </head>
 <body>
 	<div class="container">
@@ -21,11 +18,14 @@
 			<h1>Welcome To Easy Map</h1>
 		</div>
 		<div class="row interval">
-			<div class="column">
-				<select class="js-example-basic-single" name="search_input" style="width: 100%">
-				  
-				</select>
-			</div>
+			<div class="col-lg-12">
+			    <div class="input-group">
+			    	<input type="text" class="form-control" placeholder="Search for..." id="address">
+			    	<span class="input-group-btn">
+			    		<button class="btn btn-primary" type="button" id="search_btn">Go!</button>
+			    	</span>
+			    </div>
+			 </div>
 		</div>
 		<div class="row interval">
 			<div class="column">
